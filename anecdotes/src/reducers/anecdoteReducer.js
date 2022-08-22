@@ -1,3 +1,6 @@
+import anecdotes from "../services/anecdotes";
+import {useState} from "react";
+
 const anecdotesAtStart = [
   'If it hurts, do it more often',
   'Adding manpower to a late software project makes it later!',
@@ -6,6 +9,7 @@ const anecdotesAtStart = [
   'Premature optimization is the root of all evil.',
   'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.'
 ]
+
 
 const getId = () => (100000 * Math.random()).toFixed(0)
 

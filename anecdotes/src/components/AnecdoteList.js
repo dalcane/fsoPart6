@@ -8,7 +8,7 @@ const AnecdoteList = () => {
         dispatch(voteNote(id))
     }
     const dispatch = useDispatch()
-    const anecdotes = useSelector(state => state)
+    const anecdotes = useSelector(state => state.anecdotes)
     const descendinLikes = [...anecdotes].sort((a,b)=> b.votes - a.votes)
 
     return (
